@@ -1,0 +1,108 @@
+/* Mengatur font dan reset margin dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #d3dfce;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Membungkus seluruh konten agar berada di tengah */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #acd4c6;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Gaya Header */
+.header {
+    text-align: center;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #ffffff;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.header .title {
+    font-size: 1.2rem;
+    color: #060000;
+    font-weight: bold;
+}
+
+/* Gaya untuk setiap sesi (Tentang, Pendidikan, dll) */
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    color: #1b5797;
+    border-left: 4px solid #01060b;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+/* Gaya Daftar Skill */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+.skills-list li {
+    background: #e9ecef;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Gaya Daftar Kontak */
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-list a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivitas untuk layar HP */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    .header h1 {
+        font-size: 2rem;
+    }
+}
